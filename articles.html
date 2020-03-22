@@ -1,0 +1,45 @@
+<header>🕮 Rough Drafts - Group Name</header>
+<h1>Articles</h1>
+<ul>
+    <li class="character"><a href="#">Arthur Dent</a> by David</li>
+    <li class="location"><a href="#">Space House</a> by David</li>
+    <li class="event"><a href="#">First Launch</a> by Anonymous</li>
+</ul>
+<footer>
+    <nav>
+        <li><a href="#">Discussions</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Articles</a></li>
+    </nav>
+</footer>
+<style>
+    li {
+        list-style: none;
+    }
+
+    li.character::before {
+        content: '🧔 ';
+    }
+
+    li.location::before {
+        content: '🏛️ ';
+    }
+
+    li.event::before {
+        content: '📰️ ';
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    nav {
+        padding: 1em;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+    }
+</style>
